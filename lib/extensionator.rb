@@ -5,7 +5,7 @@ require "pathname"
 require "zip"
 
 module Extensionator
-  VERSION = "0.0.1"
+  VERSION = "0.0.2"
 
   def self.create(dir, key_file, dest_filename, opts = {})
     priv_key = read_key(key_file)
