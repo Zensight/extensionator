@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    extensionator (0.0.1)
+      rubyzip
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.5.1)
+    rubyzip (1.1.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.0)
+  extensionator!
+  minitest
