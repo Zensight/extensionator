@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.0"
   spec.authors = ["Isaac Cambron"]
   spec.description = "A Ruby tool for packaging Chrome extensions"
-  spec.email = %w(icambron@gmail.com)
+  spec.email         = ["isaac@isaaccambron.com"]
   spec.files = %w(README.md extensionator.gemspec) + Dir["lib/**/*.rb"]
   spec.homepage = "http://icambron.github.com/extensionator/"
   spec.licenses = %w(MIT)
