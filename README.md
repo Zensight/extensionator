@@ -25,7 +25,7 @@ extensionator -d directory/with/extension -i key.pem -o output.crx
 You can also exclude files with a regex, which will be applied to each level of the path (so if you have `foo/bar/baz.stuff`, we compare the regex to "foo", "foo/bar", and "foo/bar/baz.stuff"):
 
 ```
-extensiotor -d directory/with/extension -i key.pem -o output.crx -e "\.md$"
+extensionator -d directory/with/extension -i key.pem -o output.crx -e "\.md$"
 ```
 
 # Programmatically
