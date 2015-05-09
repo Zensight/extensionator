@@ -1,4 +1,4 @@
-Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?) [crxmake](https://github.com/Constellation/crxmake).
+Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?) [crxmake](https://github.com/Constellation/crxmake). Use the CLI or the Ruby API.
 
 # Install
 
@@ -6,7 +6,7 @@ Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?
 gem install extensionator
 ```
 
-# Use
+# What you need
 
 You need a private key so sign the extension with, and this is a BYOK (bring your own key) library. So first, you need a PEM file. If you have one, cool. If not, do this:
 
@@ -16,7 +16,7 @@ openssl genrsa -out key.pem 2048
 
 You'll also need a directory to package up. Extensionator doesn't pay any attention to the contents; it just repackages them. So if you're misssing a `manifest.json` or your files are encoded wrong or whatever, you won't find out until you try to load the packed extension into Chrome.
 
-OK, ready:
+# Command line
 
 ```
 extensionator -d directory/with/extension -i key.pem -o output.crx
