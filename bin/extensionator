@@ -1,0 +1,31 @@
+#!/usr/bin/ruby
+
+require "slop"
+
+begin
+  require "extensionator"
+rescue LoadError
+  require_relative "../lib/extensionator"
+end
+
+opts = Slop.parse do |o|
+  o.string "-d", "--directory", "Directory containing the extension (default .)", default: "."
+  o.string "-i", "--identity", "Location of the pem file to sign with."
+  o.string "-o", "--output", "Location of the output file (defaults 'extension.crx')", default: "extension.crx"
+  o.string "-e", "--exclude", "Regular expression for filenames to exclude.", default: nil
+  o.on "-v", "--version", "Extensionator version info." do
+    puts Extensionator::VERSION
+    exit
+  end
+  o.on "-h", "--help", "Print this message" do
+    puts o
+    exit
+  end
+end
+
+fail("No identity file specified") unless opts[:identity]
+
+Extensionator.create(opts[:directory],
+                     opts[:identity],
+                     opts[:output],
+                     exclude: opts[:exclude] ? Regexp.new(opts[:exclude]) : nil)
