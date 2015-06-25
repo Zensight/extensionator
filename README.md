@@ -46,7 +46,7 @@ Extensionator.create("dir", "key.pem", "output_file.crx", exclude: /\.md$/)
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Isaac Cambron
+Copyright (c) 2015 Zensight
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

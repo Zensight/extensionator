@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email = %w(isaac@isaaccambron.com)
   spec.executables = %w(extensionator)
   spec.files = %w(README.md extensionator.gemspec bin/extensionator) + Dir["lib/**/*.rb"]
-  spec.homepage = "http://github.com/icambron/extensionator/"
+  spec.homepage = "http://github.com/zensight/extensionator/"
   spec.licenses = %w(MIT)
   spec.name = "extensionator"
   spec.require_paths = %w(lib)
