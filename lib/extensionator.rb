@@ -27,9 +27,9 @@ module Extensionator
           when  (opts[:exclude] && path =~ opts[:exclude])
             Find.prune
           when File.directory?(path)
-             zip.mkdir(relative_path(dir, path))
+            zip.mkdir(relative_path(dir, path))
           else
-             zip.add(relative_path(dir, path), path)
+            zip.add(relative_path(dir, path), path)
         end
       end
     end.string
