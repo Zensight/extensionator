@@ -28,11 +28,25 @@ You can also exclude files with a regex, which will be applied to each level of 
 extensionator -d directory/with/extension -i key.pem -o output.crx -e "\.md$"
 ```
 
+If you're one of *those* people, here's this thing:
+
+```
+-> extensionator -h
+usage: /Users/isaac/.gem/ruby/2.1.5/bin/extensionator [options]
+    -d, --directory  Directory containing the extension. (Default: .)
+    -i, --identity   Location of the pem file to sign with. (Required)
+    -o, --output     Location of the output file. (Default: 'extension.crx')
+    -e, --exclude    Regular expression for filenames to exclude. (Default: .*\.crx$)
+    -v, --version    Extensionator version info.
+    -h, --help       Print this message.
+```
+
 # Programmatically
 
 Same as above, but:
 
 ```rb
+require "extensionator"
 Extensionator.create("directory/with/extension", "key.pem", "output_file.crx")
 ```
 
