@@ -5,7 +5,7 @@ require "pathname"
 require "zip"
 
 module Extensionator
-  VERSION = "0.0.6"
+  VERSION = "0.0.7"
 
   module Impl
     def self.create(dir, key_file, dest_filename, opts)
@@ -65,7 +65,7 @@ module Extensionator
     end
   end
 
-  def self.create(dir, key_file, dest_filename, opts = {exclude: /.*\.crx/})
+  def self.create(dir, key_file, dest_filename, opts = {exclude: /\.crx$/})
     Impl.create(dir, key_file, dest_filename, opts)
   end
 end

@@ -12,7 +12,7 @@ opts = Slop.parse do |o|
   o.string "-d", "--directory", "Directory containing the extension. (Default: .)", default: "."
   o.string "-i", "--identity", "Location of the pem file to sign with. (Required)"
   o.string "-o", "--output", "Location of the output file. (Default: 'extension.crx')", default: "extension.crx"
-  o.string "-e", "--exclude", "Regular expression for filenames to exclude. (Default: .*\\.crx$)", default: nil
+  o.string "-e", "--exclude", "Regular expression for filenames to exclude. (Default: \.crx$)", default: nil
   o.on "-v", "--version", "Extensionator version info." do
     puts Extensionator::VERSION
     exit

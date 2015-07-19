@@ -36,7 +36,7 @@ usage: /Users/isaac/.gem/ruby/2.1.5/bin/extensionator [options]
     -d, --directory  Directory containing the extension. (Default: .)
     -i, --identity   Location of the pem file to sign with. (Required)
     -o, --output     Location of the output file. (Default: 'extension.crx')
-    -e, --exclude    Regular expression for filenames to exclude. (Default: .*\.crx$)
+    -e, --exclude    Regular expression for filenames to exclude. (Default: \.crx$)
     -v, --version    Extensionator version info.
     -h, --help       Print this message.
 ```
