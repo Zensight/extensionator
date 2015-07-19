@@ -1,9 +1,9 @@
-Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?) [crxmake](https://github.com/Constellation/crxmake). Use the CLI or the Ruby API.
+Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?) [crxmake][crxmake-url]. Use the CLI or the Ruby API.
 
-[![Gem Version](https://img.shields.io/gem/v/extensionator.svg?style=flat-square)](https://rubygems.org/gems/extensionator)
-![Gem Downloads](https://img.shields.io/gem/dt/extensionator.svg?style=flat-square)
-![Code Climate](https://img.shields.io/codeclimate/github/Zensight/extensionator.svg?style=flat-square)
-![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+[![Gem Version][gem-img]][gem-url]
+[![Gem Downloads][gem-dl-img]][gem-url]
+[![Code Climate][code-climate-img]][code-climate-url]
+[![License][license-img]][license-url]
 
 # Install
 
@@ -84,3 +84,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+[license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: http://opensource.org/licenses/MIT
+
+[code-climate-img]: https://img.shields.io/codeclimate/github/Zensight/extensionator.svg?style=flat-square
+[code-climate-url]: https://codeclimate.com/github/Zensight/extensionator
+
+[gem-img]: https://img.shields.io/gem/v/extensionator.svg?style=flat-square
+[gem-dl-img]: https://img.shields.io/gem/dt/extensionator.svg?style=flat-square
+[gem-url]: https://rubygems.org/gems/extensionator
+
+[crxmake-url]: https://github.com/Constellation/crxmake
