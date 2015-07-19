@@ -2,6 +2,7 @@ Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?
 
 [![Gem Version](https://img.shields.io/gem/v/extensionator.svg?style=flat-square)](https://rubygems.org/gems/extensionator)
 ![Gem Downloads](https://img.shields.io/gem/dt/extensionator.svg?style=flat-square)
+![Code Climate](https://img.shields.io/codeclimate/github/Zensight/extensionator.svg?style=flat-square)
 ![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
 # Install
