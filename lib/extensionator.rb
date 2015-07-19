@@ -5,7 +5,7 @@ require "pathname"
 require "zip"
 
 module Extensionator
-  VERSION = "0.0.7"
+  VERSION = "0.0.8"
 
   module Impl
     def self.create(dir, key_file, dest_filename, opts)
