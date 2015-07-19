@@ -1,6 +1,8 @@
 Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?) [crxmake](https://github.com/Constellation/crxmake). Use the CLI or the Ruby API.
 
-[![Gem Version](https://img.shields.io/gem/dt/extensionator.svg?style=flat-square)](https://rubygems.org/gems/extensionator)
+[![Gem Version](https://img.shields.io/gem/v/extensionator.svg?style=flat-square)](https://rubygems.org/gems/extensionator)
+![Gem Downloads](https://img.shields.io/gem/dt/extensionator.svg?style=flat-square)
+![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
 # Install
 
