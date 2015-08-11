@@ -63,7 +63,4 @@ module Extensionator
     end
   end
 
-  def self.create(dir, key_file, dest_filename, opts = {exclude: /\.crx$/})
-    Impl.create(dir, key_file, dest_filename, opts)
-  end
 end
