@@ -5,8 +5,6 @@ require "pathname"
 require "zip"
 
 module Extensionator
-  VERSION = "0.0.9"
-
   module Impl
     def self.create(dir, key_file, dest_filename, opts)
       priv_key = read_key(key_file)
