@@ -62,5 +62,4 @@ module Extensionator
       [num].pack("V")
     end
   end
-
 end

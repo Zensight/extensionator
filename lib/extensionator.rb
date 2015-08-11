@@ -1,6 +1,4 @@
-require_relative "extensionator/version"
-require_relative "extensionator/cli"
-require_relative "extensionator/impl"
+Dir["#{__dir__}/extensionator/*.rb"].each{|f| require f}
 
 module Extensionator
   def self.create(dir, key_file, dest_filename, opts = {exclude: /\.crx$/})
