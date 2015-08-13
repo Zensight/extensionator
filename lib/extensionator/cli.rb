@@ -19,9 +19,7 @@ module Extensionator
       end
 
       unless opts[:identity]
-        puts("No identity file specified.")
-        puts(opts)
-        exit(-1)
+        abort("No identity file specified. You must provide the --identity or -i option")
       else
         Extensionator.create(opts[:directory],
                              opts[:identity],
