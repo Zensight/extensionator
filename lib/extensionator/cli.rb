@@ -18,14 +18,12 @@ module Extensionator
         end
       end
 
-      unless opts[:identity]
-        abort("No identity file specified; use --identity or -i switch.")
-      else
-        Extensionator.create(opts[:directory],
-                             opts[:identity],
-                             opts[:output],
-                             exclude: opts[:exclude] ? Regexp.new(opts[:exclude]) : nil)
-      end
+      abort("No identity file specified; use --identity or -i switch.") unless opts[:identity]
+
+      Extensionator.create(opts[:directory],
+                           opts[:identity],
+                           opts[:output],
+                           exclude: opts[:exclude] ? Regexp.new(opts[:exclude]) : nil)
     end
   end
 end
