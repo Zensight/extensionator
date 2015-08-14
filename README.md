@@ -1,18 +1,20 @@
-Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?) [crxmake][crxmake-url]. Use the CLI or the Ruby API.
+# Extensionator
+
+Package Chrome extensions. Inspired by [crxmake][crxmake-url], but with an eye towards simplicity and supportability. Use the CLI or the Ruby API.
 
 [![Gem Version][gem-img]][gem-url]
 [![Gem Downloads][gem-dl-img]][gem-url]
 [![Code Climate][code-climate-img]][code-climate-url]
-[![License][license-img]][license-url]
+[![License][license-img]][license]
 ![Phasers to stun][phasers-image]
 
-# Install
+## Install
 
 ```
 gem install extensionator
 ```
 
-# What you need
+## What you need
 
 You need a private key so sign the extension with, and this is a BYOK (bring your own key) library. So first, you need a PEM file. If you have one, cool. If not, do this:
 
@@ -22,7 +24,7 @@ openssl genrsa -out key.pem 2048
 
 You'll also need a directory to package up. Extensionator doesn't pay any attention to the contents; it just repackages them. So if you're misssing a `manifest.json` or your files are encoded wrong or whatever, you won't find out until you try to load the packed extension into Chrome.
 
-# Command line
+## Command line
 
 ```
 extensionator -d directory/with/extension -i key.pem -o output.crx
@@ -47,7 +49,7 @@ usage: /Users/isaac/.gem/ruby/2.1.5/bin/extensionator [options]
     -h, --help       Print this message.
 ```
 
-# Programmatically
+## Programmatically
 
 Same as above, but:
 
@@ -62,32 +64,12 @@ Or with an `exclude` option:
 Extensionator.create("dir", "key.pem", "output_file.crx", exclude: /\.md$/)
 ```
 
-# License
+## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 Zensight
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+Copyright 2015 Zensight. Distributed under the MIT license. See the [LICENSE][] file for more details.
 
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
-[license-url]: http://opensource.org/licenses/MIT
+[license]: LICENSE.md
 
 [code-climate-img]: https://img.shields.io/codeclimate/github/Zensight/extensionator.svg?style=flat-square
 [code-climate-url]: https://codeclimate.com/github/Zensight/extensionator
