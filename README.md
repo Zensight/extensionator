@@ -66,7 +66,7 @@ Extensionator.create("dir", "key.pem", "output_file.crx", exclude: /\.md$/)
 
 ## License
 
-Copyright 2015 Zensight. Distributed under the MIT license. See the [LICENSE][] file for more details.
+Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] file for more details.
 
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license]: LICENSE.md
