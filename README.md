@@ -4,6 +4,7 @@ Package Chrome extensions with Ruby. Inspired by (Loosely based on? Stolen from?
 [![Gem Downloads][gem-dl-img]][gem-url]
 [![Code Climate][code-climate-img]][code-climate-url]
 [![License][license-img]][license-url]
+![Phasers to stun][phasers-image]
 
 # Install
 
@@ -96,3 +97,5 @@ THE SOFTWARE.
 [gem-url]: https://rubygems.org/gems/extensionator
 
 [crxmake-url]: https://github.com/Constellation/crxmake
+
+[phasers-image]: https://img.shields.io/badge/phasers-stun-yellow.svg?style=flat-square
