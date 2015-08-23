@@ -2,13 +2,14 @@
 
 Package Chrome extensions. Inspired by [crxmake][crxmake-url], but with an eye towards simplicity and supportability. Use the CLI or the Ruby API.
 
-[![Gem Version][gem-img]][gem-url]
-[![License][license-img]][license]
-[![Gem Downloads][gem-dl-img]][gem-url]
-[![Build Status][travis-image]][travis-url]
-[![Code Climate][code-climate-img]][code-climate-url]
-[![Dependencies][gemnasium-image]][gemnasium-url]
-![Phasers to stun][phasers-image]
+Info          | Badges
+------------- | -------------
+Version       | [![Gem Version][gem-img]][gem-url]
+License       | [![MIT License][license-image]][license]
+Popularity    | [![Gem Downloads][gem-dl-img]][gem-url]
+Testing       | [![Build Status][travis-image]][travis-url]
+Quality       | [![Code Climate][code-climate-img]][code-climate-url] [![Dependencies][gemnasium-image]][gemnasium-url]
+Phasers       | ![Phasers to stun][phasers-image]|
 
 ## Install
 
