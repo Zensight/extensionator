@@ -80,8 +80,8 @@ Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] 
 [gem-dl-img]: https://img.shields.io/gem/dt/extensionator.svg?style=flat-square
 [gem-url]: https://rubygems.org/gems/extensionator
 
-[travis-url]: http://travis-ci.org/zensight/extensionator
-[travis-image]: http://img.shields.io/travis/zensight/extensionator.svg?style=flat-square
+[travis-url]: http://travis-ci.org/Zensight/extensionator
+[travis-image]: http://img.shields.io/travis/Zensight/extensionator.svg?style=flat-square
 
 [gemnasium-url]: https://gemnasium.com/zensight/extensionator
 [gemnasium-image]: https://img.shields.io/gemnasium/Zensight/extensionator.svg?style=flat-square
