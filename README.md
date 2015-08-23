@@ -2,14 +2,12 @@
 
 Package Chrome extensions. Inspired by [crxmake][crxmake-url], but with an eye towards simplicity and supportability. Use the CLI or the Ruby API.
 
-Info          | Badges
-------------- | -------------
-Version       | [![Gem Version][gem-image]][gem-url]
-License       | [![MIT License][license-image]][license]
-Popularity    | [![Gem Downloads][gem-dl-image]][gem-url]
-Testing       | [![Build Status][travis-image]][travis-url]
-Quality       | [![Code Climate][code-climate-image]][code-climate-url] [![Dependencies][gemnasium-image]][gemnasium-url]
-Phasers       | ![Phasers to stun][phasers-image]|
+[![Gem Version][gem-image]][gem-url]
+[![MIT License][license-image]][license]
+[![Gem Downloads][gem-dl-image]][gem-url]
+[![Build Status][travis-image]][travis-url]
+[![Code Climate][code-climate-image]][code-climate-url]
+[![Dependencies][gemnasium-image]][gemnasium-url]
 
 ## Install
 
@@ -70,6 +68,8 @@ Extensionator.create("dir", "key.pem", "output_file.crx", exclude: /\.md$/)
 ## License
 
 Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] file for more details.
+
+![Phasers to stun][phasers-image]
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license]: LICENSE.md
