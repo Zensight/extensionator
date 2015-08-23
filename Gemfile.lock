@@ -1,17 +1,17 @@
 PATH
   remote: .
   specs:
-    extensionator (0.0.3)
-      rubyzip
+    extensionator (1.0.0)
+      rubyzip (~> 1.0)
       slop (~> 4.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    minitest (5.5.1)
+    minitest (5.8.0)
     rake (10.4.2)
     rubyzip (1.1.7)
-    slop (4.1.0)
+    slop (4.2.0)
 
 PLATFORMS
   ruby
@@ -21,3 +21,6 @@ DEPENDENCIES
   extensionator!
   minitest
   rake
+
+BUNDLED WITH
+   1.10.5
