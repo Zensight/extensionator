@@ -2,15 +2,14 @@ require "fileutils"
 require "minitest/autorun"
 require "open-uri"
 require "zip"
-require "coveralls"
 require_relative "../lib/extensionator"
+require_relative "helper"
 
 Dir.chdir File.dirname(__FILE__)
 
 class TestExtensionator < Minitest::Test
 
   def setup
-    Coveralls.wear!
     extract_zip("https://developer.chrome.com/extensions/examples/api/bookmarks/basic.zip")
   end
 
