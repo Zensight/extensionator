@@ -7,7 +7,7 @@ Info          | Badges
 Version       | [![Gem Version][gem-img]][gem-url]
 License       | [![MIT License][license-image]][license]
 Popularity    | [![Gem Downloads][gem-dl-img]][gem-url]
-Testing       | [![Build Status][travis-image]][travis-url]
+Testing       | [![Build Status][travis-image]][travis-url] [![Code Coverage][coveralls-image]][coveralls-url]
 Quality       | [![Code Climate][code-climate-img]][code-climate-url] [![Dependencies][gemnasium-image]][gemnasium-url]
 Phasers       | ![Phasers to stun][phasers-image]|
 
@@ -83,6 +83,9 @@ Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] 
 
 [travis-url]: http://travis-ci.org/Zensight/extensionator
 [travis-image]: http://img.shields.io/travis/Zensight/extensionator.svg?style=flat-square
+
+[coveralls-url]: https://coveralls.io/github/Zensight/extensionator
+[coveralls-image]: https://img.shields.io/coveralls/Zensight/extensionator.svg?style=flat-square
 
 [gemnasium-url]: https://gemnasium.com/zensight/extensionator
 [gemnasium-image]: https://img.shields.io/gemnasium/Zensight/extensionator.svg?style=flat-square

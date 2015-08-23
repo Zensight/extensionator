@@ -3,7 +3,6 @@ require "minitest/autorun"
 require "open-uri"
 require "zip"
 require_relative "../lib/extensionator"
-require_relative "helper"
 
 Dir.chdir File.dirname(__FILE__)
 
