@@ -3,10 +3,10 @@
 Package Chrome extensions. Inspired by [crxmake][crxmake-url], but with an eye towards simplicity and supportability. Use the CLI or the Ruby API.
 
 [![Gem Version][gem-img]][gem-url]
+[![License][license-img]][license]
 [![Gem Downloads][gem-dl-img]][gem-url]
 [![Code Climate][code-climate-img]][code-climate-url]
 [![Dependencies][gemnasium-image]][gemnasium-url]
-[![License][license-img]][license]
 ![Phasers to stun][phasers-image]
 
 ## Install
@@ -84,4 +84,4 @@ Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] 
 
 [crxmake-url]: https://github.com/Constellation/crxmake
 
-[phasers-image]: https://img.shields.io/badge/phasers-stun-yellow.svg?style=flat-square
+[phasers-image]: https://img.shields.io/badge/phasers-stun-green.svg?style=flat-square
