@@ -5,6 +5,7 @@ Package Chrome extensions. Inspired by [crxmake][crxmake-url], but with an eye t
 [![Gem Version][gem-img]][gem-url]
 [![License][license-img]][license]
 [![Gem Downloads][gem-dl-img]][gem-url]
+[![Build Status][travis-image]][travis-url]
 [![Code Climate][code-climate-img]][code-climate-url]
 [![Dependencies][gemnasium-image]][gemnasium-url]
 ![Phasers to stun][phasers-image]
@@ -78,6 +79,9 @@ Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] 
 [gem-img]: https://img.shields.io/gem/v/extensionator.svg?style=flat-square
 [gem-dl-img]: https://img.shields.io/gem/dt/extensionator.svg?style=flat-square
 [gem-url]: https://rubygems.org/gems/extensionator
+
+[travis-url]: http://travis-ci.org/zensight/extensionator
+[travis-image]: http://img.shields.io/travis/zensight/extensionator.svg?style=flat-square
 
 [gemnasium-url]: https://gemnasium.com/zensight/extensionator
 [gemnasium-image]: https://img.shields.io/gemnasium/Zensight/extensionator.svg?style=flat-square
