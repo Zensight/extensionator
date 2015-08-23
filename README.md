@@ -4,11 +4,11 @@ Package Chrome extensions. Inspired by [crxmake][crxmake-url], but with an eye t
 
 Info          | Badges
 ------------- | -------------
-Version       | [![Gem Version][gem-img]][gem-url]
+Version       | [![Gem Version][gem-image]][gem-url]
 License       | [![MIT License][license-image]][license]
-Popularity    | [![Gem Downloads][gem-dl-img]][gem-url]
-Testing       | [![Build Status][travis-image]][travis-url] [![Code Coverage][coveralls-image]][coveralls-url]
-Quality       | [![Code Climate][code-climate-img]][code-climate-url] [![Dependencies][gemnasium-image]][gemnasium-url]
+Popularity    | [![Gem Downloads][gem-dl-image]][gem-url]
+Testing       | [![Build Status][travis-image]][travis-url]
+Quality       | [![Code Climate][code-climate-image]][code-climate-url] [![Dependencies][gemnasium-image]][gemnasium-url]
 Phasers       | ![Phasers to stun][phasers-image]|
 
 ## Install
@@ -71,21 +71,18 @@ Extensionator.create("dir", "key.pem", "output_file.crx", exclude: /\.md$/)
 
 Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] file for more details.
 
-[license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license]: LICENSE.md
 
-[code-climate-img]: https://img.shields.io/codeclimate/github/Zensight/extensionator.svg?style=flat-square
+[code-climate-image]: https://img.shields.io/codeclimate/github/Zensight/extensionator.svg?style=flat-square
 [code-climate-url]: https://codeclimate.com/github/Zensight/extensionator
 
-[gem-img]: https://img.shields.io/gem/v/extensionator.svg?style=flat-square
-[gem-dl-img]: https://img.shields.io/gem/dt/extensionator.svg?style=flat-square
+[gem-image]: https://img.shields.io/gem/v/extensionator.svg?style=flat-square
+[gem-dl-image]: https://img.shields.io/gem/dt/extensionator.svg?style=flat-square
 [gem-url]: https://rubygems.org/gems/extensionator
 
 [travis-url]: http://travis-ci.org/Zensight/extensionator
 [travis-image]: http://img.shields.io/travis/Zensight/extensionator.svg?style=flat-square
-
-[coveralls-url]: https://coveralls.io/github/Zensight/extensionator
-[coveralls-image]: https://img.shields.io/coveralls/Zensight/extensionator.svg?style=flat-square
 
 [gemnasium-url]: https://gemnasium.com/zensight/extensionator
 [gemnasium-image]: https://img.shields.io/gemnasium/Zensight/extensionator.svg?style=flat-square
