@@ -9,9 +9,9 @@ module Extensionator
         o.string "-i", "--identity", "Location of the pem file to sign with."
         o.string "-o", "--output", "Location of the output file. (Default: 'extension.[zip|crx]')"
         o.string "-e", "--exclude", "Regular expression for filenames to exclude. (Default: \.crx$)"
-        o.string "-f", "--format", "Type of file to produce, either zip or crx. Defaults to crx"
-        o.string "--inject-version", "Inject a version number into the manifest file."
-        o.bool "--inject-key", "Inject a key parameter into the manifest file."
+        o.string "-f", "--format", "Type of file to produce, either zip or crx. (Default: crx)"
+        o.string "--inject-version", "Inject a version number into the manifest file. (Default: none)"
+        o.bool "--inject-key", "Inject a key parameter into the manifest file. (Default: no)"
         #o.string "--skip-validation", "Don't try to validate this extension."
         o.on "-v", "--version", "Extensionator version info." do
           puts Extensionator::VERSION
