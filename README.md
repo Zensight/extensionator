@@ -39,7 +39,7 @@ Useful options! There are single-letter versions of most of these:
 
   * `--inject-key`. If you have an extension in the store, you know you can't have a "key" property in your manifest file. But if you do local developmentand want to keep your extension ID the same, you need that property in there. This is because Google hates you and wants to make your life hard. Fortunately, Extensionator can take your pem file, generate the public key, and put it in the manifest file before zipping up the extension. Yay!
 
- * `--inject-version`. Use this to override the "version" property in your manifest.
+  * `--inject-version`. Use this to override the "version" property in your manifest.
 
 Here's the whole shebang:
 
