@@ -44,17 +44,18 @@ Useful options!
 Here's the whole shebang:
 
 ```
--> extensionator --help
-usage: /Users/isaac/.gem/ruby/2.1.5/bin/extensionator [options]
-    -d, --directory   Directory containing the extension. (Default: .)
-    -i, --identity    Location of the pem file to sign with.
-    -o, --output      Location of the output file. (Default: 'extension.[zip|crx]')
-    -e, --exclude     Regular expression for filenames to exclude. (Default: .crx$)
-    -f, --format      Type of file to produce, either zip or crx. Defaults to crx
-    --inject-version  Inject a version number into the manifest file.
-    --inject-key      Inject a key parameter into the manifest file.
-    -v, --version     Extensionator version info.
-    -h, --help        Print this message.
+-> bin/extensionator
+usage: bin/extensionator [options]
+    -d, --directory    Directory containing the extension. (Default: .)
+    -i, --identity     Location of the pem file to sign with.
+    -o, --output       Location of the output file. (Default: 'extension.[zip|crx]')
+    -e, --exclude      Regular expression for filenames to exclude. (Default: .crx$)
+    -f, --format       Type of file to produce, either zip or crx. (Default: crx)
+    --inject-version   Inject a version number into the manifest file. (Default: none)
+    --inject-key       Inject a key parameter into the manifest file. (Default: no)
+    --skip-validation  Don't try to validate this extension. Currently just checks that the manifest is parsable.
+    -v, --version      Extensionator version info.
+    -h, --help         Print this message.
 ```
 
 ## Programmatically
