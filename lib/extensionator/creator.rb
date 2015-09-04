@@ -8,11 +8,8 @@ module Extensionator
 
     def initialize(dir, options)
       @dir = dir
-      @opts = {
-        inject_key: false,
-        inject_version: nil,
-        skip_validation: false
-      }.merge(options)
+      @opts = options
+      @opts[:exclude] ||= /\.crx$/
     end
 
     def zip(destination)

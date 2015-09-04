@@ -53,7 +53,7 @@ usage: bin/extensionator [options]
     -f, --format       Type of file to produce, either zip or crx. (Default: crx)
     --inject-version   Inject a version number into the manifest file. (Default: none)
     --inject-key       Inject a key parameter into the manifest file. (Default: no)
-    --skip-validation  Don't try to validate this extension. Currently just checks that the manifest is parsable.
+    --skip-validation  Don't try to validate this extension. Currently just checks that the manifest is parsable. (Default: no)
     -v, --version      Extensionator version info.
     -h, --help         Print this message.
 ```
