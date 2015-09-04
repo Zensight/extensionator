@@ -76,8 +76,8 @@ Options go at the end of either method call, and just look just like the CLI one
 
 ```rb
 Extensionator.crx("dir", "key.pem", "output.crx", inject_version: "4.5.1",
-                                              inject_key: true,
-                                              exclude: /\.md$/)
+                                                  inject_key: true,
+                                                  exclude: /\.md$/)
 ```
 
 ## License
