@@ -31,7 +31,7 @@ That's the file you'll use as `key.pem` below.
 extensionator -d directory/with/extension -i key.pem -o output.crx
 ```
 
-Useful options! There are single-letter versions of most of these:
+Useful options!
 
   * `-e` `--exclude`. Specify a regex of things to exclude. Matches on the whole path. `-e "\.md$"
 
