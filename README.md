@@ -39,6 +39,8 @@ Useful options!
 
   * `--inject-key`. If you have an extension in the store, you know you can't have a "key" property in your manifest file. But if you do local unpacked development and want to keep your extension ID the same, you need that property in there. This is because Google hates you and wants to make your life hard. Fortunately, Extensionator can take your pem file, generate the public key, and put it in the manifest file before writing the extension. Yay!
 
+  * `--strip-key`. Alternatively, your workflow may make more sense leaving the key in your source file and stripping it out when you build your zip. Up to you!
+
   * `--inject-version`. Use this to override the "version" property in your manifest.
 
 Here's the whole shebang:
