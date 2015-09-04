@@ -29,6 +29,11 @@ module Extensionator
       @updated = true
     end
 
+    def strip_key
+      @manifest.delete("key")
+      @updated = true
+    end
+
     def inject_version(version)
       @manifest["version"] = version
       @updated = true

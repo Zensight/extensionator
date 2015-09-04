@@ -1,4 +1,5 @@
 require "find"
+require "fileutils"
 require "openssl"
 require "pathname"
 require "zip"
@@ -13,14 +14,30 @@ module Extensionator
     end
 
     def zip(destination)
-      with_files("zip") do |zip_str|
+      with_zip do |zip_str|
         File.open(destination, "wb"){|f| f.write zip_str}
       end
     end
 
     def crx(destination)
-      with_files("crx") do |zip_str|
+      with_zip do |zip_str|
         CRX.create(destination, zip_str, private_key)
+      end
+    end
+
+    def copy(destination)
+      FileUtils.mkdir_p(destination)
+
+      process_directory.each do |p|
+        path_in_dir, file = p
+
+        write_path = File.join(destination, path_in_dir)
+
+        if File.directory?(file)
+          FileUtils.mkdir_p(write_path)
+        else
+          FileUtils.cp(file, write_path)
+        end
       end
     end
 
@@ -30,7 +47,7 @@ module Extensionator
 
     private
 
-    def with_files(default_extension)
+    def with_zip
       files = process_directory
       yield zip_up(files)
     end
@@ -40,6 +57,7 @@ module Extensionator
 
       manifest.validate(new_paths) unless @opts[:skip_validation]
       manifest.inject_key(private_key) if @opts[:inject_key]
+      manifest.strip_key if @opts[:strip_key]
       manifest.inject_version(@opts[:inject_version]) if @opts[:inject_version]
 
       new_paths << manifest.write if manifest_updated?
@@ -53,7 +71,7 @@ module Extensionator
         paths.each do |path_combo|
           path_in_zip, file = path_combo
           if File.directory?(file)
-            zip.mkdir(path_in_zip, file)
+            zip.mkdir(path_in_zip)
           else
             zip.add(path_in_zip, file)
           end

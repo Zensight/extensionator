@@ -12,6 +12,7 @@ module Extensionator
         o.string "-f", "--format", "Type of file to produce, either zip or crx. (Default: crx)"
         o.string "--inject-version", "Inject a version number into the manifest file. (Default: none)"
         o.bool "--inject-key", "Inject a key parameter into the manifest file. (Default: no)"
+        o.bool "--strip-key", "Remove the key parameter from the manifest file. (Default: no)"
         o.bool "--skip-validation", "Don't try to validate this extension. Currently just checks that the manifest is parsable."
         o.on "-v", "--version", "Extensionator version info." do
           puts Extensionator::VERSION
@@ -29,8 +30,11 @@ module Extensionator
       end
 
       creator = Creator.new(opts[:directory] || ".", fixup_options(opts))
-      if opts[:format] == "zip"
+      case opts[:format]
+      when "zip"
         creator.zip(opts[:output] || "output.zip")
+      when "dir"
+        creator.copy(opts[:output] || "output")
       else
         creator.crx(opts[:output] || "output.crx")
       end

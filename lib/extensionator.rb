@@ -17,6 +17,10 @@ module Extensionator
     Creator.new(dir, opts).zip(dest_filename)
   end
 
+  def self.copy(dir, dest_directory, opts= {})
+    Creator.new(dir, opts).copy(dest_directory)
+  end
+
   ##deprecated, reverse compat
   def self.create(dir, identity_file, dest_filename, opts = {})
     crx(dir, identity_file, dest_filename, opts)
