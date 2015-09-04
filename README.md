@@ -75,7 +75,7 @@ Extensionator.zip("directory/with/extension", "output_file.zip")
 Options go at the end of either method call, and just look just like the CLI ones, but as Ruby symbols:
 
 ```rb
-Extensionator.crx("dir", "key", "output.crx", inject_version: "4.5.1",
+Extensionator.crx("dir", "key.pem", "output.crx", inject_version: "4.5.1",
                                               inject_key: true,
                                               exclude: /\.md$/)
 ```
