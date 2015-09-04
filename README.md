@@ -75,7 +75,7 @@ Extensionator.zip("directory/with/extension", "output_file.zip")
 
 Or a directory:
 
-```
+```rb
 Extensionator.dir("directory/with/extension", "output_dir")
 ```
 
