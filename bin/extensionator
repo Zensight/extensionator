@@ -2,8 +2,10 @@
 
 begin
   require_relative "../lib/extensionator"
+  require_relative "../lib/extensionator/cli"
 rescue LoadError
   require "extensionator"
+  require "../lib/extensionator/cli"
 end
 
 Extensionator::CLI.start
