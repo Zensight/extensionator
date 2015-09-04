@@ -42,7 +42,6 @@ module Extensionator
 
     def self.fixup_options(in_opts)
       opts = in_opts.clone
-      opts[:output] = output.to_sym if opts[:output]
       opts[:exclude] = Regexp.new(opts[:exclude]) if opts[:exclude]
       opts
     end
