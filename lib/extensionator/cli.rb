@@ -4,7 +4,26 @@ require_relative "../extensionator"
 module Extensionator
   module CLI
     def self.start
-      opts = Slop.parse do |o|
+
+      opts = parse_opts
+
+      if opts.used_options.empty?
+        puts opts
+        exit
+      end
+
+       method, default = case opts[:format]
+        when "zip" then [:zip, "output.zip"]
+        when "dir" then [:copy, "output"]
+        else [:crx, "output.crx"]
+        end
+
+       creator = Creator.new(opts[:directory] || ".", fixup_options(opts))
+       creator.send(method, opts[:output] || default)
+    end
+
+    def self.parse_opts
+      Slop.parse do |o|
         o.string "-d", "--directory", "Directory containing the extension. (Default: .)"
         o.string "-i", "--identity", "Location of the pem file to sign with."
         o.string "-o", "--output", "Location of the output file. (Default: 'extension.[zip|crx]')"
@@ -22,21 +41,6 @@ module Extensionator
           puts o
           exit
         end
-      end
-
-      if opts.used_options.empty?
-        puts opts
-        exit
-      end
-
-      creator = Creator.new(opts[:directory] || ".", fixup_options(opts))
-      case opts[:format]
-      when "zip"
-        creator.zip(opts[:output] || "output.zip")
-      when "dir"
-        creator.copy(opts[:output] || "output")
-      else
-        creator.crx(opts[:output] || "output.crx")
       end
     end
 
