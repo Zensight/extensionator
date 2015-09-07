@@ -114,4 +114,4 @@ Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] 
 
 [crxmake-url]: https://github.com/Constellation/crxmake
 
-[phasers-image]: https://img.shields.io/badge/phasers-stun-green.svg?style=flat-square
+[phasers-image]: https://img.shields.io/badge/phasers-stun-brightgreen.svg?style=flat-square
