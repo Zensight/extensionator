@@ -33,7 +33,7 @@ extensionator -d directory/with/extension -i key.pem -o output.crx
 
 Useful options!
 
-  * `-e` `--exclude`. Specify a regex of things to exclude. Matches on the whole path. `-e "\.md$"
+  * `-e` `--exclude`. Specify a regex of things to exclude. Matches on the whole path. `-e "\.md$"`
 
   * `-f` `--format`. "zip" or "crx". Zip is what the Chrome store has you upload, since it does its own signing. You won't need the `-i` option unless you do something weird with the other options. Dir is useful for using the inject_key option with.
 
