@@ -11,7 +11,7 @@ GEM
     minitest (5.8.3)
     rake (10.4.2)
     rubyzip (1.1.7)
-    slop (4.2.0)
+    slop (4.2.1)
 
 PLATFORMS
   ruby
