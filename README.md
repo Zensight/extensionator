@@ -35,7 +35,7 @@ Useful options!
 
   * `-e` `--exclude`. Specify a regex of things to exclude. Matches on the whole path. `-e "\.md$"`
 
-  * `-f` `--format`. "zip" or "crx". Zip is what the Chrome store has you upload, since it does its own signing. You won't need the `-i` option unless you do something weird with the other options. Dir is useful for using the inject_key option with.
+  * `-f` `--format`. "zip", "dir" or "crx". Zip is what the Chrome store has you upload, since it does its own signing. You won't need the `-i` option unless you do something weird with the other options. Dir is useful for using the inject_key option with.
 
   * `--inject-key`. If you have an extension in the store, you know you can't have a "key" property in your manifest file. But if you do local unpacked development and want to keep your extension ID the same, you need that property in there. This is because Google hates you and wants to make your life hard. Fortunately, Extensionator can take your pem file, generate the public key, and put it in the manifest file before writing the extension. Yay!
 
@@ -50,9 +50,9 @@ Here's the whole shebang:
 usage: bin/extensionator [options]
     -d, --directory    Directory containing the extension. (Default: .)
     -i, --identity     Location of the pem file to sign with.
-    -o, --output       Location of the output file. (Default: 'extension[.zip|.crx|]')
+    -o, --output       Location of the output file. (Default: 'output[.zip|.crx|]')
     -e, --exclude      Regular expression for filenames to exclude. (Default: .crx$)
-    -f, --format       Type of file to produce, either zip, directory crx. (Default: crx)
+    -f, --format       Type of file to produce, either 'zip', 'dir' or 'crx'. (Default: crx)
     --inject-version   Inject a version number into the manifest file. (Default: none)
     --inject-key       Inject a key parameter into the manifest file. (Default: no)
     --skip-validation  Don't try to validate this extension. Currently just checks that the manifest is parsable. (Default: no)
