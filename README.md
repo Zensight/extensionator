@@ -63,7 +63,7 @@ usage: /Users/isaac/.gem/ruby/2.2.4/bin/extensionator [options]
 
 ## Programmatically
 
-Same as above, but:
+Create a CRX:
 
 ```rb
 require "extensionator"
