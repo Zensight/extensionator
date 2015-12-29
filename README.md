@@ -15,20 +15,20 @@ Package Chrome extensions. Zip files or CRXs. Some convenience options. Use the 
 gem install extensionator
 ```
 
-## Keys
+## Identity
 
 If you plan on generating a CRX (as opposed to just a zip file to upload somewhere), you need a private key so sign the extension with, and this is a BYOK (bring your own key) library. So first, you need a PEM file. If you have one, cool. If not, do this:
 
 ```
-openssl genrsa -out key.pem 2048
+openssl genrsa -out identity.pem 2048
 ```
 
-That's the file you'll use as `key.pem` below.
+That's the file you'll use as `identity.pem` below.
 
 ## Command line
 
 ```
-extensionator -d directory/with/extension -i key.pem -o output.crx
+extensionator -d directory/with/extension -i identity.pem -o output.crx
 ```
 
 Useful options!
@@ -67,7 +67,7 @@ Create a CRX:
 
 ```rb
 require "extensionator"
-Extensionator.crx("directory/with/extension", "key.pem", "output_file.crx")
+Extensionator.crx("directory/with/extension", "identity.pem", "output_file.crx")
 ```
 
 Or to create a zip:
@@ -85,10 +85,13 @@ Extensionator.dir("directory/with/extension", "output_dir")
 Options go at the end of any method call, and just look just like the CLI ones, but as Ruby symbols:
 
 ```rb
-Extensionator.crx("dir", "key.pem", "output.crx", inject_version: "4.5.1",
-                                                  strip_key: true,
-                                                  inject_key: true,
-                                                  exclude: /\.md$/)
+Extensionator.crx("dir", 
+                  "identity.pem",
+                  "output.crx",
+                  inject_version: "4.5.1",
+                  strip_key: true,
+                  inject_key: true,
+                  exclude: /\.md$/)
 ```
 
 ## License
