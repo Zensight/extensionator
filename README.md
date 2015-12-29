@@ -46,8 +46,8 @@ Useful options!
 Here's the whole shebang:
 
 ```
--> bin/extensionator
-usage: bin/extensionator [options]
+-> extensionator
+usage: /Users/isaac/.gem/ruby/2.2.4/bin/extensionator [options]
     -d, --directory    Directory containing the extension. (Default: .)
     -i, --identity     Location of the pem file to sign with.
     -o, --output       Location of the output file. (Default: 'output[.zip|.crx|]')
