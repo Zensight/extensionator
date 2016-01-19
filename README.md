@@ -113,7 +113,7 @@ Copyright 2015 Zensight. Distributed under the MIT License. See the [LICENSE][] 
 [travis-url]: http://travis-ci.org/Zensight/extensionator
 [travis-image]: http://img.shields.io/travis/Zensight/extensionator.svg?style=flat-square
 
-[gemnasium-url]: https://gemnasium.com/zensight/extensionator
+[gemnasium-url]: https://gemnasium.com/Zensight/extensionator
 [gemnasium-image]: https://img.shields.io/gemnasium/Zensight/extensionator.svg?style=flat-square
 
 [crxmake-url]: https://github.com/Constellation/crxmake
