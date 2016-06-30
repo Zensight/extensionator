@@ -67,7 +67,7 @@ Create a CRX:
 
 ```rb
 require "extensionator"
-Extensionator.crx("directory/with/extension", "identity.pem", "output_file.crx")
+Extensionator.crx("directory/with/extension", "output_file.crx", identity: "identity.pem")
 ```
 
 Or to create a zip:
@@ -86,8 +86,8 @@ Options go at the end of any method call, and just look just like the CLI ones, 
 
 ```rb
 Extensionator.crx("dir", 
-                  "identity.pem",
                   "output.crx",
+                  identity: "identity.pem",
                   inject_version: "4.5.1",
                   strip_key: true,
                   inject_key: true,

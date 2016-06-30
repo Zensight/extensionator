@@ -16,13 +16,13 @@ class TestExtensionator < Minitest::Test
     end
   end
 
-  def test_create_alias
-    Extensionator.create("basic", "dummy.pem", "output.crx")
+  def test_create
+    Extensionator.create(:crx, "basic", "output.crx", identity: "dummy.pem")
     assert File.exists?("output.crx")
   end
 
   def test_crx
-    Extensionator.crx("basic", "dummy.pem", "output.crx")
+    Extensionator.crx("basic", "output.crx", identity: "dummy.pem")
     assert File.exists?("output.crx")
   end
 
