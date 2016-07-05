@@ -44,9 +44,12 @@ module Extensionator
     end
 
     def write
-      file = Tempfile.new("crx-manifest.json")
-      File.open(file, "w"){|f| f.write(JSON.pretty_generate(@manifest))}
-      ["manifest.json", file.path]
+      dir = "/tmp/extensionator"
+      FileUtils.mkdir_p(dir)
+      file = "#{dir}/crx-manifest.json"
+      content = JSON.pretty_generate(@manifest)
+      File.open(file, "w"){|f| f.write(content)}
+      ["manifest.json", file]
     end
   end
 end
