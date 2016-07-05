@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    extensionator (2.0)
+    extensionator (2.1)
       rubyzip (= 1.2.0)
       slop (~> 4.2)
 
