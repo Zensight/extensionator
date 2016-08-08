@@ -17,7 +17,7 @@ gem install extensionator
 
 ## Identity
 
-If you plan on generating a CRX (as opposed to just a zip file to upload somewhere), you need a private key so sign the extension with, and this is a BYOK (bring your own key) library. So first, you need a PEM file. If you have one, cool. If not, do this:
+If you plan on generating a CRX (as opposed to just a zip file to upload somewhere), you need a private key to sign the extension with, and this is a BYOK (bring your own key) library. So first, you need a PEM file. If you have one, cool. If not, do this:
 
 ```
 openssl genrsa -out identity.pem 2048
