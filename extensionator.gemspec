@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.1"
   spec.add_runtime_dependency "rubyzip", "1.2.0"
-  spec.add_runtime_dependency "slop", "~> 4.2"
+  spec.add_runtime_dependency "slop", "~> 4.4"
   spec.authors = ["Isaac Cambron"]
   spec.description = "A tool for packaging Chrome extensions"
   spec.email = %w(isaac@isaaccambron.com)

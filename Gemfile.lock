@@ -3,7 +3,7 @@ PATH
   specs:
     extensionator (2.1)
       rubyzip (= 1.2.0)
-      slop (~> 4.2)
+      slop (~> 4.4)
 
 GEM
   remote: https://rubygems.org/
