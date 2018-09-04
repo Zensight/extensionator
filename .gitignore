@@ -3,3 +3,4 @@ pkg
 *.zip
 *.crx
 .bundle
+Gemfile.lock
