@@ -9,9 +9,10 @@ Package Chrome extensions. Zip files or CRXs. Some convenience options. Use the 
 
 ## You probably don't need this anymore
 
-Extensionator made it really easy to build and pacakge CRX files, which was really annoying. Chrome's fixed most of that;
+Extensionator made it really easy to build and pacakge CRX files, which was previously an annoying and circuitous process. Chrome's fixed most of that:
 
- * CRX files aren't supported by Chrome anymore and you can use zip files for non-store distribution
+ * CRX files aren't supported by Chrome anymore
+ * You can use zip files for non-store distribution. No signatures required
  * The Chromestore no longer cares if you include a key in the submitted manifest, which was previously a huge PITA
  
 These simplifications mean it's almost easy to use a standard zip tool; the only thing Extensionator adds for you is the ability to inject the version number into the manifest, which seems like a questionable amount of value for a build tool to add. We're leaving this up because there's no reason to take it down, but FWIW, we don't use it anymore ourselves.
