@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    extensionator (2.1.3)
-      rubyzip (= 1.2.1)
+    extensionator (2.1.4)
+      rubyzip (= 1.2.2)
       slop (~> 4.4)
 
 GEM
@@ -10,8 +10,8 @@ GEM
   specs:
     minitest (5.11.3)
     rake (12.3.0)
-    rubyzip (1.2.1)
-    slop (4.6.1)
+    rubyzip (1.2.2)
+    slop (4.6.2)
 
 PLATFORMS
   ruby
