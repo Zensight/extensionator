@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", ">= 1.1", "< 3"
   spec.add_development_dependency "minitest", "~> 5.11"
   spec.add_development_dependency "rake", "~> 12.3"
-  spec.add_runtime_dependency "rubyzip", "1.2.2"
+  spec.add_runtime_dependency "rubyzip", "~> 1.2"
   spec.add_runtime_dependency "slop", "~> 4.4"
   spec.authors = ["Isaac Cambron"]
   spec.description = "A tool for packaging Chrome extensions"
